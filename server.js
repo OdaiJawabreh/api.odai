@@ -11,7 +11,7 @@ const Port = 9999;
 // Routers
 app.use("/", (req, res ) => {
 try {
-    res.status(200).send('odai ')
+    res.status(200).send('#'+Math.floor(Math.random()*16777215).toString(16))
 } catch (error) {
     res.status(404).json(error);
 }
